@@ -1,0 +1,107 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+"http://www.w3.org/TR/html4/strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<title>用div来布局</title>
+		<style>
+		div{
+			border: 1px dotted black;
+		}
+		#container{
+			width: 1300px;
+			margin: auto;
+		}
+		#header{
+			height: 120px;
+			background: green;
+		}	
+		#main{
+			height: 600px;
+			background: yellow;
+		}
+		#lside{
+			float: left;
+			height:600px;
+			background: deeppink;
+			width: 900px;
+		}
+		#side1{
+			height:278px;
+			width:428px;
+			background: darkblue;
+			float: left;
+			margin: 10px;
+		}
+		#side2{
+			height:278px;
+			width:428px;
+			background: brown;
+			float: left;
+			margin: 10px;
+		}
+		#side3{
+			height:278px;
+			width:428px;
+			background: blueviolet;
+			float: left;
+			clear: both;
+			margin: 10px;
+		}
+		#side4{
+			height:278px;
+			width:428px;
+			background: bisque;
+			float: left;
+			margin: 10px;
+		}
+		#rside{
+			float: right;
+			height:600px;
+			background: deepskyblue;
+			width: 300px;
+		}
+		#topside{
+			height:0px;
+			background: rgba(0,0,0,0);
+			width: 0px;
+			margin: 10px;
+			float: left;
+			border-top: 140px solid rgba(0,0,0,0);
+			border-right: 140px solid rgba(0,0,0,0);
+			border-bottom: 140px solid rgba(0,0,0,0);
+			border-left: 140px solid blue;
+		}
+		#botside{
+			height:280px;
+			background: deeppink;
+			width: 280px;
+			margin: 10px;
+			float: left;
+		}
+		#footer{
+			background: blue;
+			height: 120px;	
+		}
+		</style>
+	</head>
+	<body>
+		<div id="container">
+           <div id="header"></div>
+           <div id="main">
+        	  <div id="lside">
+        	  	<div id="side1"></div>
+        	  	<div id="side2"></div>
+        	  	<div id="side3"></div>
+        	  	<div id="side4"></div>
+        	  </div>
+        	  <div id="rside">
+        	  	<div id="topside"></div>
+        	  	<div id="botside"></div>
+        	  </div>
+           </div>
+           <div id="footer"></div>
+        </div>
+	</body>
+</html>
